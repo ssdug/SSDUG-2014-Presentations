@@ -1,0 +1,94 @@
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:j="http://niem.gov/niem/domains/jxdm/4.1" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:watch="http://www.offenderwatch.com" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns="">
+  <nc:Person s:id="uid_1_111111">
+    <nc:PersonName>
+      <nc:PersonGivenName>First Name: string - ex(String Value)</nc:PersonGivenName>
+      <nc:PersonMiddleName>Middle Name: string - ex(String Value)</nc:PersonMiddleName>
+      <nc:PersonSurName>Last Name: string - ex(String Value)</nc:PersonSurName>
+      <nc:PersonNameSuffixText>Suffix: string - ex(String Value)</nc:PersonNameSuffixText>
+    </nc:PersonName>
+    <watch:PeopleStatus>Person Status: string - ex(String Value)</watch:PeopleStatus>
+    <watch:RiskLevel>Risk Classification
+: string - ex(String Value)</watch:RiskLevel>
+    <j:Probation>
+      <nc:SupervisionSupervisor>
+        <nc:Person>
+          <nc:PersonName>
+            <nc:PersonFullName>Probation officer name text: string - ex(String Value)</nc:PersonFullName>
+          </nc:PersonName>
+        </nc:Person>
+      </nc:SupervisionSupervisor>
+    </j:Probation>
+    <watch:RegisteringAgency>
+      <nc:Agency>
+        <j:SubjectStatus>
+          <j:RegisteredSexOffender>
+            <j:SubjectStatus>
+              <nc:StatusText>Non Compliance Status Text: boolean - ex(true)</nc:StatusText>
+            </j:SubjectStatus>
+          </j:RegisteredSexOffender>
+        </j:SubjectStatus>
+      </nc:Agency>
+    </watch:RegisteringAgency>
+    <nc:PersonBirthDate>
+      <nc:Date>Date: date - ex(01/01/1900)</nc:Date>
+    </nc:PersonBirthDate>
+    <watch:RegisteringAgency>
+      <nc:Agency>
+        <j:SubjectStatus>
+          <j:RegisteredSexOffender>
+            <j:RegisteredOffenderStartDate>
+              <nc:Date>Reg Start Date
+: date - ex(01/01/1900)</nc:Date>
+            </j:RegisteredOffenderStartDate>
+            <j:RegisteredOffenderEndDate>
+              <nc:Date>Reg End Date
+: date - ex(01/01/1900)</nc:Date>
+            </j:RegisteredOffenderEndDate>
+          </j:RegisteredSexOffender>
+        </j:SubjectStatus>
+      </nc:Agency>
+    </watch:RegisteringAgency>
+    <nc:LocationAddress xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:j="http://niem.gov/niem/domains/jxdm/4.1" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:watch="http://www.offenderwatch.com" xmlns:nc="http://niem.gov/niem/niem-core/2.0" s:id="uid_250_2222">
+      <watch:OffenderAddress>
+        <nc:StructuredAddress>
+          <nc:LocationStreet>
+            <nc:StreetName>Address - Street: string - ex(String Value)</nc:StreetName>
+          </nc:LocationStreet>
+          <nc:AddressBuildingText>Address - APT/Unit/Suite: string - ex(String Value)</nc:AddressBuildingText>
+        </nc:StructuredAddress>
+        <watch:AddressClass>Address - Type: string - ex(String Value)</watch:AddressClass>
+        <nc:StructuredAddress>
+          <nc:LocationCityName>Address - city: string - ex(String Value)</nc:LocationCityName>
+          <nc:LocationStateUSPostalServiceCode>Address - state: string - ex(String Value)</nc:LocationStateUSPostalServiceCode>
+          <nc:LocationPostalCode>Address - zip: string - ex(String Value)</nc:LocationPostalCode>
+          <nc:LocationCountyName>Address - county: string - ex(String Value)</nc:LocationCountyName>
+          <nc:LocationCountryName>Address - Country: string - ex(String Value)</nc:LocationCountryName>
+        </nc:StructuredAddress>
+      </watch:OffenderAddress>
+      <nc:AssociationBeginDate>
+        <nc:Date>Address - Start Date: date - ex(01/01/1900)</nc:Date>
+      </nc:AssociationBeginDate>
+      <nc:AssociationEndDate>
+        <nc:Date>Address - End Date: date - ex(01/01/1900)</nc:Date>
+      </nc:AssociationEndDate>
+    </nc:LocationAddress>
+    <j:Offense xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:j="http://niem.gov/niem/domains/jxdm/4.1" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:watch="http://www.offenderwatch.com" xmlns:nc="http://niem.gov/niem/niem-core/2.0" s:id="uid_310_2222">
+      <nc:Case>
+        <nc:ActivityIdentification>
+          <nc:IdentificationID>Offense - Case Number Text: string - ex(String Value)</nc:IdentificationID>
+        </nc:ActivityIdentification>
+      </nc:Case>
+      <watch:OffenseCounty>Offense - County: string - ex(String Value)</watch:OffenseCounty>
+    </j:Offense>
+    <nc:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:j="http://niem.gov/niem/domains/jxdm/4.1" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:watch="http://www.offenderwatch.com" xmlns:nc="http://niem.gov/niem/niem-core/2.0" s:id="uid_350_2222">
+      <nc:Document>
+        <nc:DocumentStatus>
+          <nc:StatusText>Photo - Primary: boolean - ex(true)</nc:StatusText>
+        </nc:DocumentStatus>
+        <nc:Image>
+          <nc:BinaryBase64Object>Photo - Binary: string - ex(String Value)</nc:BinaryBase64Object>
+        </nc:Image>
+      </nc:Document>
+    </nc:Document>
+  </nc:Person>
+</root>
