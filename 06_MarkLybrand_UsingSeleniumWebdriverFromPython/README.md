@@ -7,6 +7,6 @@ Using Selenium Web Driver from Python w/ Mark Lybrand
 
 Links:
 
-[Selenium](http://docs.seleniumhq.org/)
-[How To Install Python, pip, and virtualenv on Windows with PowerShell](http://www.tylerbutler.com/2012/05/how-to-install-python-pip-and-virtualenv-on-windows-with-powershell/)
+- [Selenium](http://docs.seleniumhq.org/)
+- [How To Install Python, pip, and virtualenv on Windows with PowerShell](http://www.tylerbutler.com/2012/05/how-to-install-python-pip-and-virtualenv-on-windows-with-powershell/)
 
